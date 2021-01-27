@@ -1,11 +1,11 @@
 {
   "key": [""],
-  "domain": "cdn.xcyth.xyz",
+  "domain": "xcyth.xyz/cdn",
   "puploadKeyGenLength": 64,
   "public": true,
   "maxUploadSize": 1024,
   "markdown": true,
-  "port": 8080,
+  "port": 443,
   "secure": true,
   "fileNameLength": 4,
   "shortUrlLength": 3,
