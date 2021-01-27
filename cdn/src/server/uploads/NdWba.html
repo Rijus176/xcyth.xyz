@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="theme-color" content="#DC603A">
+<meta property="og:title" content="HPaste">
+<meta property="og:description" content="var message = prompt(&#34;Enter the message&#34;);...">
+<link rel="stylesheet" href="atom-one-dark.css">
+<link rel="stylesheet" href="paste.css">
+<script src="highlight.pack.js"></script>
+<script src="highlightjs-line-numbers.min.js"></script>
+</head>
+<body>
+<pre><code id="code">var message = prompt(&#34;Enter the message&#34;);
+var count = prompt(&#34;Enter the Number of times&#34;); // Change the Number to change 
+var looper = 0;
+for(looper=0;looper&lt;count;looper++)
+{
+	window.InputEvent = window.Event || window.InputEvent;
+	var d = new Date();
+	var event = new InputEvent(&#39;input&#39;, {bubbles: true});
+	var textbox= document.querySelector(&#39;#main &gt; footer &gt; div._3SvgF._1mHgA.copyable-area &gt; div.DuUXI &gt; div &gt; div._1awRl.copyable-text.selectable-text&#39;);
+	
+	textbox.textContent = message;
+	textbox.dispatchEvent(event);
+	var b = document.querySelectorAll(&#39;#main &gt; footer &gt; div._3SvgF._1mHgA.copyable-area &gt; div:nth-child(3) &gt; button&#39;)[0]
+	b.click();
+}</code></pre>
+<script>hljs.initHighlightingOnLoad()</script>
+<script>hljs.initLineNumbersOnLoad();</script>
+</body>
+</html>
